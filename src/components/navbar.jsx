@@ -1,16 +1,15 @@
+import {Link } from "react-router-dom"
 
 export default function Navbar(){
 
   return(
     <>
-<div className="navbar bg-accent">
+    <div className="navbar bg-accent">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">THE STORE</a>
+    <Link to="/" className="btn btn-ghost text-xl">THE STORE</Link>
   </div>
   <div className="flex-none">
-  <div className="form-control ">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-    </div>
+  <Link to="/create">Create a Shoe</Link>
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
@@ -47,6 +46,8 @@ export default function Navbar(){
     </div>
   </div>
 </div>
+    
+
     </>
   )
 }
