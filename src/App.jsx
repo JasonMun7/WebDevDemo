@@ -1,6 +1,4 @@
-import supabase from './config/supabaseClient.js'
 import './App.css'
-import {useEffect, useState} from 'react'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 
@@ -17,14 +15,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/create" element={<Create />} />
-        <Route path="/:id" element={<Update />} />
-      </Routes>
-    </BrowserRouter>
+{/* How Should we Navigate through our different pages? */}
       </>
   )
 }
